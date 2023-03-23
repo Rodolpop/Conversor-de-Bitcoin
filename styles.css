@@ -2,23 +2,71 @@
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color:#fff;
+    
+    
 }
 
 body {
-    background-color: #26324d;
+    
+    background-image: url(./oin2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0b0b0b;
+    
+    
+
+}
+
+#a{
+    color:#eff8f3;
+    font-size: 20px;
+    
+    
+}
+
+a:active{
+
+    color:#e34a6f;
+}
+
+h3{
+
+    font-size: 20px;
+    color: #fff;
 }
 
 main {
-
     max-width: 250px;
     margin: 100px auto;
 }
 
-.coin-container {
+button {
+    
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: #063b48;
+    border: solid 2px #272525;
+    box-shadow: 5px 5px 10px rgb(15, 14, 14);
+    
+}
 
+
+#usd-amount{
+
+    color: #2dd55f;
+    font-size: 30px;
+}
+
+
+.coin-container {
+    
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 25px;
+    
+    border-color: solid 2px #fff;
+    
 }
 
 .coin {
@@ -32,15 +80,26 @@ main {
 }
 
 .bitcoin-item{
+
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
     background-color: #58bc82;
+    box-shadow: 5px 5px 10px rgb(15, 14, 14);
+    font-size: 30px;
+    -webkit-text-stroke: 0.5px black;
+    
 }
 
 .dollar-item{
+
+    margin-top: 20px;
     opacity: 0;
     background-color: #e34a6f;
     animation-duration: .5s;
     animation-fill-mode: forwards;
     animation-name: opacity;
+    box-shadow: 5px 5px 10px rgb(15, 14, 14);
 }
 
 @keyframes opacity {

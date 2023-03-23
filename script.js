@@ -6,6 +6,10 @@ fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
     .then(response => response.json())
     .then(data => displayData(data));
 
+    function refrescar () {
+        
+    }
+
 const displayData = data => {
     const usd = data.bpi.USD.rate_float;
     usdAmount.textContent = `$${usd} USD`;
